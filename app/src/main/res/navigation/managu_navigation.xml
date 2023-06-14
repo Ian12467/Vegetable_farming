@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/managu_graph"
+    app:startDestination="@id/managu_about">
+    <fragment
+        android:id="@+id/managu_Tips"
+        android:name="com.example.mkulima_plus.Managu.managu_Tips"
+        android:label="Tips"
+        tools:layout="@layout/fragment_managu__tips" >
+        <action
+            android:id="@+id/action_managu_Tips_to_managu_attacks"
+            app:destination="@id/managu_attacks" />
+        <action
+            android:id="@+id/action_managu_Tips_to_managu_about2"
+            app:destination="@id/managu_about" />
+    </fragment>
+    <fragment
+        android:id="@+id/managu_about"
+        android:name="com.example.mkulima_plus.Managu.managu_about"
+        android:label="fragment_managu_about"
+        tools:layout="@layout/fragment_managu_about" >
+        <action
+            android:id="@+id/action_managu_about_to_managu_Tips"
+            app:destination="@id/managu_Tips" />
+        <action
+            android:id="@+id/action_managu_about_to_managu_attacks"
+            app:destination="@id/managu_attacks" />
+    </fragment>
+    <fragment
+        android:id="@+id/managu_attacks"
+        android:name="com.example.mkulima_plus.Managu.managuattacks"
+        android:label="fragment_managu_attacks"
+        tools:layout="@layout/fragment_managu_attacks" >
+        <action
+            android:id="@+id/action_managu_attacks_to_managu_Tips"
+            app:destination="@id/managu_Tips" />
+        <action
+            android:id="@+id/action_managu_attacks_to_managu_about"
+            app:destination="@id/managu_about" />
+    </fragment>
+
+</navigation>

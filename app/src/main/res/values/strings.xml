@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Mkulima_Plus</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">About</string>
+    <string name="tips">Tips</string>
+    <string name="attacks">Attacks</string>
+    <string name="about_fragment">About Fragment</string>
+    <string name="test">Test</string>
+    <string name="attack_fragment">Attack_Fragment</string>
+    <string name="tips_fragment">Tips_Fragment</string>
+    <string name="mkulima_plus">Mkulima Plus</string>
+    <string name="select_crops">Select Crops :</string>
+    <string name="isaka">Spider plant (Cleome gynandra L) is an indigenous leafy vegetable, which is widely consumed by the majority of the rural and urban population in Kenya. About 90 % of the rural population in Kenya have small parcels of land and rely on indigenous leafy vegetables for relish. Spider plant is ranked second amongst the top four indigenous leafy vegetables consumed as relish which also include Amaranthus blitum (pigweed), Solanum scabrum (nightshade), and Vigna unguiculata (cowpea)</string>
+    <string name="isakaPlant">Isaka</string>
+    <string name="selected_crop">Selected Crop</string>
+    <string name="already_registered_sign_in">Already Registered , Sign In !</string>
+    <string name="type_your_email">Type your Email</string>
+    <string name="type_your_password">Type Your Password</string>
+    <string name="retype_your_password">Retype Your Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="don_t_you_have_an_account_signup">Don\'t you have an Account ? Signup</string>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/isakaDisplay">
+
+    <fragment
+        android:id="@+id/fragment_about"
+        android:name="com.example.mkulima_plus.Isaka.Isaka_About"
+        android:label="About"
+        tools:layout="@layout/fragment_about">
+        <action
+            android:id="@+id/action_about_to_attacks"
+            app:destination="@id/fragment_attacks" />
+        <action
+            android:id="@+id/action_about_to_tips"
+            app:destination="@id/tips" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_attacks"
+        android:name="com.example.mkulima_plus.Isaka.Isaka_Attacks"
+        android:label="Atacks"
+        tools:layout="@layout/fragment_attacks">
+        <action
+            android:id="@+id/action_attacks_to_about"
+            app:destination="@id/fragment_about" />
+        <action
+            android:id="@+id/action_fragment_attacks_to_fragment_about"
+            app:destination="@id/fragment_about" />
+        <action
+            android:id="@+id/action_fragment_attacks_to_tips"
+            app:destination="@id/tips" />
+    </fragment>
+    <fragment
+        android:id="@+id/tips"
+        android:name="com.example.mkulima_plus.Isaka.Isaka_Tips"
+        android:label="Tips"
+        tools:layout="@layout/fragment_tips">
+        <action
+            android:id="@+id/action_tips_to_about"
+            app:destination="@id/fragment_about" />
+    </fragment>
+    <fragment
+        android:id="@+id/isakaDisplay"
+        android:name="com.example.mkulima_plus.Isaka.isakaDisplay"
+        android:label="fragment_isaka_display"
+        tools:layout="@layout/fragment_isaka_display" >
+        <action
+            android:id="@+id/action_isakaDisplay_to_fragment_attacks"
+            app:destination="@id/fragment_attacks" />
+        <action
+            android:id="@+id/action_isakaDisplay_to_tips"
+            app:destination="@id/tips" />
+        <action
+            android:id="@+id/action_isakaDisplay_to_fragment_about"
+            app:destination="@id/fragment_about" />
+    </fragment>
+</navigation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/managu_about"
+        app:showAsAction="always"
+        android:title="@string/about"
+/>
+    <item
+        android:id="@+id/managu_attacks"
+        app:showAsAction="ifRoom"
+        android:title="@string/attacks"
+        />
+    <item
+        android:id="@+id/managu_Tips"
+        app:showAsAction="always"
+        android:title="@string/tips"
+        />
+    </menu>
+
+
